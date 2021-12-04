@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+.container{
+    width: 410px;
+    height: 410px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 1px 9px 34px #AA9882, 14px -3px 29px #AA9882;
+}
+.clock{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url(clock.png);
+    background-size: cover;
+    box-shadow: inset 1px 9px 34px #AA9882, inset 14px -3px 29px #AA9882;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ .clock::before{
+     content: "";
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    position:absolute;
+    z-index: 9;
+    border-radius: 50%;
+    border: 3px solid white;
+} 
+
+
+.hr,.min,.sec{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hr{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    
+   
+}
+.min{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    
+    
+}
+.sec{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    
+   
+}
+
+.hr::before{
+    content: '';
+    width: 10px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(128, 123, 123);
+    position: absolute;
+    z-index: 11;
+    
+
+}
+.min::before{
+    content: '';
+    width: 6px;
+    height: 120px;
+    border-radius: 50%;
+    /* done by mezbah uddin maruf */
+    background-color: rgb(80, 78, 78);
+    position: absolute;
+    z-index: 12;
+    
+
+}.sec::before{
+    content: '';
+    width: 3px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 15;
+    
+
+}
